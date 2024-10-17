@@ -30,8 +30,8 @@ function Home() {
         
     </nav>
     
-    <div className='col-3 h-100  d-flex align-items-center justify-content-evenly flex-row'>
-        <div className='text-dark  fs-5 fw-bold '>Log in</div>
+    <div className='col-3 h-100  d-flex align-items-center justify-content-end flex-row'>
+        <div className='text-dark  fs-5 fw-bold m-auto '>Log in</div>
         <button className='btn fw-bold fs-5 border-danger border  text-danger'>
             Get Started
         </button>

@@ -1,17 +1,18 @@
 import React from 'react'
 import NavEle from './NavEleFooter/NavEle'
+import './Footer.css'
 
 function Footer() {
     return (
-        <div className='col-12 d-flex justify-content-between align-items-center text-warning fs-5 fw-bold'>
+        <div className='col-12 py-4  d-flex justify-content-evenly align-items-start  bg-secondary text-warning fs-5 fw-bold'>
     
-        <div className=' col-5 border border-dark border-2 d-flex justify-content-start align-items-center'>
-            <img src="../public/images.png" alt="" />
+        <div className=' col-4 d-flex justify-content-center align-items-center'>
+            <img src="../public/images.png" alt="" className='footer-img'  />
         </div>
         <nav className='col-7 '>
-            <div className=' border border-2 border-success  d-flex align-items-start justify-content-evenly'>
+            <div className='   d-flex align-items-start justify-content-evenly'>
                <div>
-                Resources
+               <h4> Resources</h4>
                <NavEle
                navType={'Home'}
                />
@@ -21,7 +22,7 @@ function Footer() {
 
                </div>
                <div>
-                Follow Us
+            <h4>    Follow Us</h4>
                <NavEle
                navType={'GitHub'}
                />
@@ -31,7 +32,7 @@ function Footer() {
 
                </div>
                <div>
-                Legal
+              <h4>  Legal</h4>
                <NavEle
                navType={'Privacy policy'}
                />
