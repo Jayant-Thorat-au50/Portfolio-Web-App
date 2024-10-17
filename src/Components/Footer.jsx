@@ -15,9 +15,12 @@ function Footer() {
                <h4> Resources</h4>
                <NavEle
                navType={'Home'}
+               LinkTo={'/'}
                />
                <NavEle
                navType={'About'}
+               LinkTo={'/AboutUS'}
+
                />
 
                </div>
@@ -25,9 +28,11 @@ function Footer() {
             <h4>    Follow Us</h4>
                <NavEle
                navType={'GitHub'}
+               LinkTo={'/GitHub'}
                />
                <NavEle
                navType={'Discord'}
+               LinkTo={'/GitHub'}
                />
 
                </div>
@@ -35,9 +40,11 @@ function Footer() {
               <h4>  Legal</h4>
                <NavEle
                navType={'Privacy policy'}
+               LinkTo={'/'}
                />
                <NavEle
                navType={'Terms and conditions'}
+               LinkTo={'/'}
                />
 
                </div>
