@@ -1,6 +1,6 @@
 import React from 'react'
 import './App.css'
-import Header from './Components/Header'
+import Header from './Components/Header/Header'
 import Footer from './Components/Footer'
 import { Routes,Route } from 'react-router-dom'
 import HomePage from './Components/HomePage'
@@ -17,7 +17,7 @@ function App() {
 <section className='row  '>
   
 <Header/>
-<main className='  container col-10 main border border-2 d-flex justify-content-center align-items-center'>
+<main className='    container  col-10 main  d-flex justify-content-center align-items-center'>
 <Routes>
 
   <Route path='/' element={<HomePage/>}/>

@@ -1,0 +1,9 @@
+.header{
+    position: sticky;
+    top: 0px;
+    background-color: #eeb862;
+}
+.header-img{
+    border-radius: 50%;
+    height: 70px;
+}
