@@ -12,7 +12,7 @@ function Footer() {
         <nav className='col-7 '>
             <div className='   d-flex align-items-start justify-content-evenly'>
                <div>
-               <h4 className=' text-danger'> Resources</h4>
+               <h4 className=' text-warning'> Resources</h4>
                <NavEle
                navType={'Home'}
                LinkTo={'/'}
@@ -25,7 +25,7 @@ function Footer() {
 
                </div>
                <div>
-            <h4 className=' text-danger'>    Follow Us</h4>
+            <h4 className=' text-warning'>    Follow Us</h4>
                <NavEle
                navType={'GitHub'}
                LinkTo={'/GitHub'}
@@ -37,7 +37,7 @@ function Footer() {
 
                </div>
                <div>
-              <h4 className=' text-danger'>  Legal</h4>
+              <h4 className=' text-waring'>  Legal</h4>
                <NavEle
                navType={'Privacy policy'}
                LinkTo={'/'}

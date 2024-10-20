@@ -22,7 +22,7 @@ function App() {
 <section className='row  '>
   
 <Header/>
-<main className='    container  col-10 main  d-flex justify-content-center align-items-center'>
+<main className=' mx-auto col-lg-10 col-11 main  d-flex justify-content-center align-items-center'>
 <Outlet/>
 
 

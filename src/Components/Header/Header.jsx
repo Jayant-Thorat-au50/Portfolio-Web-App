@@ -29,7 +29,7 @@ function Home() {
           <NavLink
             to={"/AboutUS"}
             className={({ isActive }) =>
-              isActive ? "text-danger" : "text-dark"
+              isActive ? "text-warning" : "text-dark"
             }
           >
             <div className=" fs-5 fw-bold">About Us</div>
@@ -39,7 +39,7 @@ function Home() {
           <NavLink
             to={"/GitHub"}
             className={({ isActive }) =>
-              isActive ? "text-danger" : "text-dark"
+              isActive ? "text-warning" : "text-dark"
             }
           >
             <div className=" fs-5 fw-bold">GitHub</div>
@@ -49,7 +49,7 @@ function Home() {
           <NavLink
             to={"/Projects"}
             className={({ isActive }) =>
-              isActive ? "text-danger" : "text-dark"
+              isActive ? "text-warning" : "text-dark"
             }
           >
             <div className=" fs-5 fw-bold ">Projects</div>
@@ -59,17 +59,17 @@ function Home() {
           <NavLink
             to={"/ContactUS"}
             className={({ isActive }) =>
-              isActive ? "text-danger" : "text-dark"
+              isActive ? "text-warning" : "text-dark"
             }
           >
-            <div className=" fs-5 fw-bold ">Contact US</div>
+            <div className=" fs-5 fw-bold ">Contact Us</div>
           </NavLink>
         </div>
       </nav>
 
-      <div className="col-3 h-100  d-flex align-items-center justify-content-end flex-row">
-        <div className="text-dark  fs-5 fw-bold m-auto ">Log in</div>
-        <button className="btn fw-bold fs-5 border-danger border  text-danger">
+      <div className="col-3   d-flex align-items-center justify-content-start  flex-row">
+        <div className="text-dark  fs-5 fw-bold d-flex justify-content-center align-items-center  col-4 "><div>Log in</div></div>
+        <button className="btn fw-bold fs-5 border-warning border col-6 text-warning">
           Get Started
         </button>
       </div>

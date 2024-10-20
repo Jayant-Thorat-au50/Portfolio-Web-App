@@ -35,7 +35,7 @@ function GitHub() {
   return (
     <>
 
-      <div className="  bg-secondary col-12 d-flex justify-content-center align-items-center flex-column gap-2  text-white ">
+      <div className="   col-12 d-flex justify-content-center align-items-center flex-column gap-2  text-white gitHub-bg">
        <div className=" col-12  py-2 d-flex justify-content-center align-items-center">
        <h4>GitHub followers : &nbsp;</h4>
        <h4 className="text-white">{gitHubUser.data.followers}</h4>
