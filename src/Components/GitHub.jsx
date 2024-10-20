@@ -35,13 +35,13 @@ function GitHub() {
   return (
     <>
 
-      <div className="   col-12 d-flex justify-content-center align-items-center flex-column gap-2  text-white gitHub-bg">
-       <div className=" col-12  py-2 d-flex justify-content-center align-items-center">
-       <h4>GitHub followers : &nbsp;</h4>
+      <div className="   col-12 d-flex justify-content-center align-items-center flex-column gap-2 py-lg-0 py-2 pb-lg-2 pb-0  text-white gitHub-bg">
+       <div className=" col-12   py-lg-2 py-0 d-flex justify-content-center align-items-center">
+       <h4 >GitHub followers : &nbsp;</h4>
        <h4 className="text-white">{gitHubUser.data.followers}</h4>
        </div>
 
-       <div className=" d-flex  justify-content-between align-items-center col-12">
+       <div className=" d-flex flex-lg-row flex-column  justify-content-between pb-lg-4 pb-0 align-items-center col-12">
         <img src={gitHubUser.data.avatar_url} className=" m-auto border border-2 border-dark github-img my-2" alt="" />
          <div className=" m-auto">
          <h4>{gitHubUser.data.name}</h4>
