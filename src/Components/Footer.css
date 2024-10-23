@@ -6,6 +6,7 @@
 
 .footer-bg {
     background-color:#3c96b4;
+    overflow: hidden;
 }
 
 @media screen and (max-width : 768px) {

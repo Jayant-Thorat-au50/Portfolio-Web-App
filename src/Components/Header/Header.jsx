@@ -1,19 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
+import { IoReorderThreeOutline } from "react-icons/io5";
 
 import { NavLink } from "react-router-dom";
 import "./Header.css";
 
 function Header() {
+
+  const [hamburger, setHamburger] = useState(false)
   return (
 <>
 
-<div className="d-lg-flex justify-content-center py-1 align-items-center header  d-none">
+<div className="d-lg-flex  justify-content-center py-1 align-items-center header d-none">
       <div className="col-2 d-flex justify-content-center align-items-center fw-bold">
         <NavLink to={"/"}>
           <img
             src="/images.png"
             alt=""
-            className="header-img border border-2 border-success"
+            className="header-img "
           />
         </NavLink>
       </div>
@@ -78,19 +81,20 @@ function Header() {
     </div>
 
 
-{/* Header for ythe smaller screen size with hamburger mainu */}
+{/* Header for the smaller screen size with hamburger mainu */}
 
 
 
 
 
-    <div className="d-flex justify-content-between py-1 align-items-center header  d-lg-none">
-      <div className="col-2 d-flex justify-content-center align-items-center fw-bold border">
+    <div className="d-flex justify-content-between  py-1 align-items-center col-12 flex-column header d-lg-none">
+     <section className=" col-12 d-flex  justify-content-between align-items-center ">
+     <div className="col-2 d-flex justify-content-center align-items-center fw-bold ">
         <NavLink to={"/"}>
           <img
             src="/images.png"
             alt=""
-            className="header-img border border-2 border-success"
+            className="header-img "
           />
         </NavLink>
       </div>
@@ -102,10 +106,46 @@ function Header() {
         </button>
       </div>
 
-      <div className="border col-1 ">
-
+      <div className=" col-1 fs-1 ">
+      <IoReorderThreeOutline
+      onClick={()=> setHamburger(!hamburger)}
+      />
+ 
       </div>
 
+
+     </section>
+
+     <div className= {hamburger?'d-block border border-2 border-dark m-1 col-12':" d-none  "}>
+      <ul className=" col-12 d-flex justify-content-center align-items-start flex-column ">
+        <li className="p-1" onClick={()=> setHamburger(false)}>
+        <NavLink to={'/'} className="text-dark fw-bold fs-5">
+        Home
+        </NavLink>
+          </li> 
+        <li className="p-1" onClick={()=> setHamburger(false)}>
+        <NavLink to={'/AboutUs'} className="text-dark fw-bold fs-5">
+        About Us
+        </NavLink>
+          </li> 
+        <li className="p-1" onClick={()=> setHamburger(false)}>
+        <NavLink to={'/Projects'} className="text-dark fw-bold fs-5">
+       Projects
+        </NavLink>
+          </li> 
+        <li className="p-1" onClick={()=> setHamburger(false)}>
+        <NavLink to={'/GitHub'} className="text-dark fw-bold fs-5">
+        GitHub
+        </NavLink>
+          </li> 
+        <li className="p-1" onClick={()=> setHamburger(false)}>
+        <NavLink to={'/ContactUs'} className="text-dark fw-bold fs-5">
+        Contact Us
+        </NavLink>
+          </li> 
+       
+      </ul>
+     </div>
 {/*
 
       <nav className="d-flex col-7 fs-5 text-dark justify-content-center gap-3  align-items-center">
@@ -161,6 +201,7 @@ function Header() {
 
       
     </div>
+
 
 </>
   );

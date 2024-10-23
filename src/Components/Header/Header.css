@@ -7,3 +7,6 @@
     border-radius: 50%;
     height: 70px;
 }
+ul li{
+list-style: none;
+}
