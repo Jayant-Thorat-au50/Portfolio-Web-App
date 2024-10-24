@@ -2,11 +2,39 @@
     position: sticky;
     top: 0px;
     background-color: #3c96b4;
+
 }
 .header-img{
     border-radius: 50%;
     height: 70px;
 }
-ul li{
+ul{
 list-style: none;
+}
+
+@media screen and (max-width : 768px){
+    .header{
+background-image: linear-gradient(to right, #3c96b4 , #92ffe7);
+
+    }
+}
+.mobile-navbar{
+    height: 80vh;
+    position: absolute;
+    top: 74px;
+    right: -4px;
+  
+background-image: linear-gradient(to bottom, #92ffe7,#3c96b4);
+
+
+}
+
+.nav-ele-mobile{
+    border-radius: 5px;
+cursor: pointer;
+transition: 2.5s;
+
+}
+.nav-ele-mobile:hover{
+background-image: linear-gradient(to right, #79d579,transparent);
 }
